@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 
-const API_URL = "https://expert-zebra-jj9wv64gg47cqpvx-3000.app.github.dev/api/weather/london";
+const API_URL = "https://expert-zebra-jj9wv64gg47cqpvx-3000.app.github.dev/api";
 
 export const getWeatherData = async (city: string): Promise<WeatherData> => {
   return new Promise<WeatherData>((resolve, reject) => {
