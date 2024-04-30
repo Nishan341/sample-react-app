@@ -83,8 +83,8 @@ const WeatherCard: React.FC = () => {
               </div>
             )}
             <p className="text-3xl font-bold">{data.magnitude}°C</p>
-            <p className="text-lg">Humidity: {data.latitude}%</p>
-            <p className="text-lg">Wind: {data.longtitude} km/h</p>
+            <p className="text-lg">latitude: {data.latitude}%</p>
+            <p className="text-lg">longtitude: {data.longtitude} km/h</p>
            
           </div>
         </CardBody>
