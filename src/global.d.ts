@@ -8,7 +8,7 @@ interface WeatherData {
 
 interface SesmicData {
   city: string;
-  magnitutde: number;
+  magnitude: number;
   latitude: number;
   longtitude: number;
 }
