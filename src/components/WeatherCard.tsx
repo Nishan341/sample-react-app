@@ -8,7 +8,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import { useState } from "react";
-import { TiWeatherDownpour, TiWeatherSunny } from "react-icons/ti";
+import { MdDangerous } from "react-icons/md";
 import { getSesmicData } from "../api/actions";
 
 const WeatherCard: React.FC = () => {
@@ -75,14 +75,14 @@ const WeatherCard: React.FC = () => {
             <h1 className="text-3xl font-bold">{data.city}</h1>
             {data.magnitude > 20 ? (
               <div>
-                <TiWeatherSunny className="w-36 h-36" />
+                <MdDangerous className="w-36 h-36" />
               </div>
             ) : (
               <div>
-                <TiWeatherDownpour className="w-36 h-36" />
+                <MdDangerous className="w-36 h-36" />
               </div>
             )}
-            <p className="text-3xl font-bold">{data.magnitude}°C</p>
+            <p className="text-3xl font-bold">{data.magnitude}ml</p>
             <p className="text-lg">latitude: {data.latitude}%</p>
             <p className="text-lg">longtitude: {data.longtitude} km/h</p>
            
