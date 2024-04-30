@@ -8,20 +8,20 @@ import {
   Button,
 } from "@nextui-org/react";
 import { useState } from "react";
-import { MdDangerous } from "react-icons/md";
-import { getSesmicData } from "../api/actions";
+import { TiWeatherDownpour, TiWeatherSunny } from "react-icons/ti";
+import { getWeatherData } from "../api/actions";
 
 const WeatherCard: React.FC = () => {
-  const [data, setData] = useState<SesmicData>();
+  const [data, setData] = useState<WeatherData>();
   const [loadingState, setLoadingState] = useState(false);
   const [city, setCity] = useState("");
   const [error, setError] = useState("");
 
   const handleSearch = () => {
-    console.log("Fetching Sesmic Data...");
+    console.log("Fetching Weather Data...");
     console.log(city);
     setLoadingState(true);
-    getSesmicData(city)
+    getWeatherData(city)
       .then((res) => {
         setError("");
         if (res) {
@@ -73,19 +73,19 @@ const WeatherCard: React.FC = () => {
         <CardBody>
           <div className="flex flex-col items-center">
             <h1 className="text-3xl font-bold">{data.city}</h1>
-            {data.magnitude > 20 ? (
+            {data.temperature > 20 ? (
               <div>
-                <MdDangerous className="w-36 h-36" />
+                <TiWeatherSunny className="w-36 h-36" />
               </div>
             ) : (
               <div>
-                <MdDangerous className="w-36 h-36" />
+                <TiWeatherDownpour className="w-36 h-36" />
               </div>
             )}
-            <p className="text-3xl font-bold">{data.magnitude}ml</p>
-            <p className="text-lg">latitude: {data.latitude}%</p>
-            <p className="text-lg">longtitude: {data.longtitude} km/h</p>
-           
+            <p className="text-3xl font-bold">{data.temperature}°C</p>
+            <p className="text-lg">Humidity: {data.humidity}%</p>
+            <p className="text-lg">Wind: {data.wind} km/h</p>
+            <p className="text-lg">Rain: {data.rain} %</p>
           </div>
         </CardBody>
       ) : (
