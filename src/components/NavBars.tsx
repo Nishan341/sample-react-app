@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, NavbarContent } from "@nextui-org/react";
 import { MdApi } from "react-icons/md";
 
-const NavBar = () => {
+const NavBars = () => {
   return (
     <Navbar className="bg-slate-100 h-16">
       <NavbarBrand>
@@ -39,4 +39,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default NavBars;
