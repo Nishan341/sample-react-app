@@ -9,7 +9,7 @@ export const getSesmicData = async (city: string): Promise<SesmicData> => {
       .then((res) => {
         resolve({
           city: city,
-          magnitute: res.data.magnitute,
+          magnitude: res.data.magnitude,
           latitude: res.data.latitude,
           longtitude: res.data.longtitude,
           
