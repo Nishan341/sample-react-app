@@ -2,6 +2,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import WeatherCard from "./components/WeatherCard";
 
+
 const App = () => {
   return (
     <div className="flex flex-col h-screen">
