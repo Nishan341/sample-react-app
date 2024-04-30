@@ -2,17 +2,17 @@ import axios, { AxiosError } from "axios";
 
 const API_URL ="https://zany-acorn-jjrjvqwpv65x25rq5-3000.app.github.dev/api";
 
-export const getWeatherData = async (city: string): Promise<WeatherData> => {
-  return new Promise<WeatherData>((resolve, reject) => {
+export const getSesmicData = async (city: string): Promise<SesmicData> => {
+  return new Promise<SesmicData>((resolve, reject) => {
     axios
       .get(`${API_URL}/weather/${city}`)
       .then((res) => {
         resolve({
           city: city,
-          temperature: res.data.temperature,
-          humidity: res.data.humidity,
-          wind: res.data.wind,
-          rain: res.data.rain,
+          magnitude: res.data.magnitude,
+          latitude: res.data.latitude,
+          longtitude: res.data.lontitude,
+          
         });
       })
       .catch((error) => {
