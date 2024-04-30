@@ -5,7 +5,7 @@ const API_URL ="https://zany-acorn-jjrjvqwpv65x25rq5-3000.app.github.dev/api";
 export const getSesmicData = async (city: string): Promise<SesmicData> => {
   return new Promise<SesmicData>((resolve, reject) => {
     axios
-      .get(`${API_URL}/weather/${city}`)
+      .get(`${API_URL}/sesmic/${city}`)
       .then((res) => {
         resolve({
           city: city,
