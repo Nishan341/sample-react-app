@@ -1,8 +1,8 @@
-import "./App.css";
+import "./Apps.css";
 import NavBars from "./components/NavBars";
 import SesmicCard from "./components/SesmicCard";
 
-const App = () => {
+const Apps = () => {
     return (
       <div className="flex flex-col h-screen">
         <NavBars />
@@ -13,5 +13,5 @@ const App = () => {
     );
   };
   
-  export default App;
+  export default Apps;
   
