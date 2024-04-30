@@ -9,32 +9,32 @@ const NavBars = () => {
         <p className="font-bold text-inherit"> Sesmic API </p>
       </NavbarBrand>
       <NavbarContent className="absolute inset-y-0 right-0 w-16...">
-        {/* <NavbarItem>
+        {/* <NavbarsItem>
           <Link color="foreground" href="#">
             Features
           </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
+        </NavbarsItem>
+        <NavbarsItem isActive>
           <Link href="#" aria-current="page">
             Customers
           </Link>
-        </NavbarItem>
-        <NavbarItem>
+        </NavbarsItem>
+        <NavbarsItem>
           <Link color="foreground" href="#">
             Integrations
           </Link>
-        </NavbarItem> */}
+        </NavbarsItem> */}
       </NavbarContent>
-      {/* <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+      {/* <NavbarsContent justify="end">
+        <NavbarsItem className="hidden lg:flex">
           <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
+        </NavbarsItem>
+        <NavbarsItem>
           <Button as={Link} color="primary" href="#" variant="flat">
             Sign Up
           </Button>
-        </NavbarItem>
-      </NavbarContent> */}
+        </NavbarsItem>
+      </NavbarsContent> */}
     </Navbar>
   );
 };
