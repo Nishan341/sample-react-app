@@ -9,9 +9,9 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 import { TbCube, TbCubeOff } from "react-icons/tb";
-
-
+import { GrStatusGoodSmall } from "react-icons/gr";
 import { GiMilkCarton } from "react-icons/gi";
+import { WiSnowflakeCold } from "react-icons/wi";
 import { getBobaData } from "../api/actions";
 
 const BobaCard: React.FC = () => {
@@ -91,11 +91,11 @@ const BobaCard: React.FC = () => {
               </div>
             <p className="text-lg">milk:{data.milk}%</p>
             <div>
-              <GiMilkCarton className="w-20 h-20"/>
+              <GrStatusGoodSmall className="w-20 h-20"/>
               </div>
             <p className="text-lg">Tapioca: {data.Tapioca}%</p>
             <div>
-              <GiMilkCarton className="w-20 h-20"/>
+              <WiSnowflakeCold className="w-20 h-20"/>
               </div>
             <p className="text-lg">ice: {data.ice} %</p>
           </div>
@@ -103,7 +103,7 @@ const BobaCard: React.FC = () => {
       ) : (
         <CardBody>
           <div className="flex flex-col items-center">
-            <p className="text-xl font-bold">Please enter a boba tea</p>
+            <p className="text-xl font-bold">Please enter the boba tea you want</p>
           </div>
         </CardBody>
       )}
