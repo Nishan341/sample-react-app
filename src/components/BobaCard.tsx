@@ -78,15 +78,15 @@ const BobaCard: React.FC = () => {
             <h1 className="text-3xl font-bold">{data.drink}</h1>
             {data.sugar > 20 ? (
               <div>
-                < TbCube className="w-36 h-36" />
+                < TbCube className="w-20 h-20" />
               </div>
             ) : (
               <div>
-                <TbCubeOff className="w-36 h-36" />
+                <TbCubeOff className="w-20 h-20" />
               </div>
             )}
             <p className="text-3xl font-bold">{data.sugar}%</p>
-            <p className="text-lg"><GiMilkCarton/>milk:{data.milk}%</p>
+            <h1 className="text-lg"><GiMilkCarton/>,milk:{data.milk}%</h1>
             <p className="text-lg">Tapioca: {data.Tapioca}%</p>
             <p className="text-lg">ice: {data.ice} %</p>
           </div>
