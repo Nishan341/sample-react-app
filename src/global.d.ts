@@ -1,14 +1,8 @@
-interface WeatherData {
-  city: string;
-  temperature: number;
-  humidity: number;
-  wind: number;
-  rain: number;
+interface BobaData {
+  drink: string;
+  sugar: number;
+  milk: number;
+  Tapioca: number;
+  ice: number;
 }
 
-interface SesmicData {
-  city: string;
-  magnitude: number;
-  latitude: number;
-  longtitude: number;
-}
