@@ -42,7 +42,7 @@ const BobaCard: React.FC = () => {
   };
 
   return (
-    <Card className="max-w-[400px]">
+    <Card className="max-w-[500px]">
       <CardHeader className="flex gap-3">
         <form
           onSubmit={(e) => {
