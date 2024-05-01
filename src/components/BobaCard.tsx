@@ -50,11 +50,11 @@ const BobaCard: React.FC = () => {
             handleSearch();
           }}
         >
-          <div className="flex flex-col w-full p-2 space-y-4">
+          <div className="flex flex-col w-full p-20 space-y-10">
             <Input
               id="bobaname"
               type="text"
-              label="boba"
+              label="boba tea"
               value={drink}
               onChange={(e) => {
                 setDrink(e.target.value);
