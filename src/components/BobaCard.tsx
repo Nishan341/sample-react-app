@@ -42,7 +42,7 @@ const BobaCard: React.FC = () => {
   };
 
   return (
-    <Card className="max-w-[1000px]">
+    <Card className="max-w-[400px]">
       <CardHeader className="flex gap-3">
         <form
           onSubmit={(e) => {
@@ -103,7 +103,7 @@ const BobaCard: React.FC = () => {
       ) : (
         <CardBody>
           <div className="flex flex-col items-center">
-            <p className="text-xl font-bold">Please enter the boba tea </p>
+            <p className="text-xl font-bold">Please enter the boba tea</p>
           </div>
         </CardBody>
       )}
