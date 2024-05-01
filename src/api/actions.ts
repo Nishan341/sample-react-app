@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 
-const API_URL ="https://zany-acorn-jjrjvqwpv65x25rq5-3000.app.github.dev/api";
+const API_URL ="https://psychic-giggle-jj9wv64ggjg2p6w4-3000.app.github.dev/api";
 
 export const getSesmicData = async (city: string): Promise<SesmicData> => {
   return new Promise<SesmicData>((resolve, reject) => {
