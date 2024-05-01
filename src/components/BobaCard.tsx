@@ -9,6 +9,7 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 import { TiWeatherDownpour, TiWeatherSunny } from "react-icons/ti";
+import { GiMilkCarton } from "react-icons/gi";
 import { getBobaData } from "../api/actions";
 
 const BobaCard: React.FC = () => {
@@ -83,7 +84,7 @@ const BobaCard: React.FC = () => {
               </div>
             )}
             <p className="text-3xl font-bold">{data.sugar}%</p>
-            <p className="text-lg">milk: {data.milk}%</p>
+            <p className="text-lg">milk:<GiMilkCarton/>{data.milk}%</p>
             <p className="text-lg">Tapioca: {data.Tapioca}%</p>
             <p className="text-lg">ice: {data.ice} %</p>
           </div>
