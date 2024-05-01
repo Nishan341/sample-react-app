@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #ffffff;
+  background-color: red;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,6 +38,7 @@ body {
   place-items: center;
   min-height: 100vh;
   width: 100vw;
+  
 }
 
 
