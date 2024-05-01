@@ -87,15 +87,15 @@ const BobaCard: React.FC = () => {
             )}
             <p className="text-3xl font-bold">{data.sugar}%</p>
              <div>
-              <GiMilkCarton className="w-20 h-20"/>
+              <GiMilkCarton color='blue'className="w-20 h-20"/>
               </div>
             <p className="text-lg">milk:{data.milk}%</p>
             <div>
-              <GrStatusGoodSmall className="w-20 h-20"/>
+              <GrStatusGoodSmall color='brown' className="w-20 h-20"/>
               </div>
             <p className="text-lg">Tapioca: {data.Tapioca}%</p>
             <div>
-              <WiSnowflakeCold className="w-20 h-20"/>
+              <WiSnowflakeCold color='black'className="w-20 h-20"/>
               </div>
             <p className="text-lg">ice: {data.ice} %</p>
           </div>
