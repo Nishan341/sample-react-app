@@ -103,7 +103,7 @@ const BobaCard: React.FC = () => {
       ) : (
         <CardBody>
           <div className="flex flex-col items-center">
-            <p className="text-xl font-bold">Please enter the boba tea you want</p>
+            <p className="text-xl font-bold">Please enter the boba tea </p>
           </div>
         </CardBody>
       )}
