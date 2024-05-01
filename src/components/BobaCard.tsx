@@ -86,8 +86,17 @@ const BobaCard: React.FC = () => {
               </div>
             )}
             <p className="text-3xl font-bold">{data.sugar}%</p>
-            <h1 className="text-lg"><GiMilkCarton/>milk:{data.milk}%</h1>
+             <div>
+              <GiMilkCarton className="w-20 h-20"/>
+              </div>
+            <p className="text-lg">milk:{data.milk}%</p>
+            <div>
+              <GiMilkCarton className="w-20 h-20"/>
+              </div>
             <p className="text-lg">Tapioca: {data.Tapioca}%</p>
+            <div>
+              <GiMilkCarton className="w-20 h-20"/>
+              </div>
             <p className="text-lg">ice: {data.ice} %</p>
           </div>
         </CardBody>
