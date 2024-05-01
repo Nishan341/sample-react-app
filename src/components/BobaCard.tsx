@@ -82,7 +82,7 @@ const BobaCard: React.FC = () => {
                 <TiWeatherDownpour className="w-36 h-36" />
               </div>
             )}
-            <p className="text-3xl font-bold">{data.sugar}°C</p>
+            <p className="text-3xl font-bold">{data.sugar}%</p>
             <p className="text-lg">milk: {data.milk}%</p>
             <p className="text-lg">Tapioca: {data.Tapioca}%</p>
             <p className="text-lg">ice: {data.ice} %</p>
